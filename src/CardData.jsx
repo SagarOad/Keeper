@@ -25,9 +25,9 @@ const CardData = [
       Para: 'Watch Netflix',
     },
     {
-        id: 6,
-        heading: 'Task 6',
-        Para: 'Just Die',
+      id: 6,
+      heading: 'Task 6',
+      Para: 'Just Die',
       }
     
   ];

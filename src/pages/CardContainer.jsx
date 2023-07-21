@@ -1,29 +1,25 @@
-import React from "react";
+import React, { useContext } from "react";
 import Card from "../components/Card";
 import Buttons from "../components/Buttons";
-import Data from "../CardData";
-// import TodoForm from "../components/TodoForm";
-// import { useState } from "react";
+import { CardDataContext } from "../CardData";
+import TodoForm from "../components/TodoForm";
 
 const CardContainer = () => {
-const addItem = () => {
- 
-}
-
+  const { cardData } = useContext(CardDataContext);
 
   return (
     <div className="p-8">
       <Buttons />
+      <TodoForm />
       <div className="flex flex-wrap">
-        {Data.map((data) => (
+        {cardData.map((data) => (
           <Card 
-          key={data.id} 
-          heading={data.heading} 
-          para={data.Para} 
+            key={data.id} 
+            heading={data.heading}
+            para={data.Para} 
           />
         ))}
       </div>
-      <button onClick={addItem}>Testing</button>
     </div>
   );
 };

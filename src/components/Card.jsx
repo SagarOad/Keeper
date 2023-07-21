@@ -1,10 +1,7 @@
 import React, { useState } from 'react'
 import { AiFillDelete } from 'react-icons/ai';
-// import Data from '../CardData'
 
 const Card = ({heading, para}) => {
-
-
 
 
   return (
